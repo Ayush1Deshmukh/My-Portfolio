@@ -1,18 +1,10 @@
-/*=============== GOOGLE FONTS ===============*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
   --first-hue: 984;
   --sat: 80%;
   --lig: 68%;
@@ -25,8 +17,7 @@
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
@@ -37,17 +28,17 @@
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
-  /*========== Font weight ==========*/
+  
   --font-medium: 500;
   --font-semibold: 600;
 
-  /*========== z index ==========*/
+  
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
-/* Responsive typography */
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 2.5rem;
@@ -60,7 +51,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -83,7 +73,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s;
-  /* for light mode animation */
+
 }
 
 h1,
@@ -112,7 +102,7 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+
 .change-theme {
   font-size: 1.25rem;
   cursor: pointer;
@@ -123,18 +113,13 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables light theme ==========*/
+
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
   --container-color: #fff;
 }
-
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
 .light-theme .scroll-header {
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
@@ -191,7 +176,6 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 44%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
   margin-left: 1rem;
@@ -228,7 +212,6 @@ body.light-theme {
   color: var(--text-color-light);
 }
 
-/*=============== HEADER & NAV===============*/
 .header {
   position: fixed;
   top: 0;
@@ -237,7 +220,7 @@ body.light-theme {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: .4s;
-  /* for light mode animation */
+  
 
 }
 
@@ -268,7 +251,7 @@ body.light-theme {
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
   transition: .4s;
-  /* for light mode animation */
+  
 }
 
 
@@ -288,7 +271,7 @@ body.light-theme {
 
 }
 
-/* Active link */
+
 .active-link {
   background: linear-gradient(180deg,
       hsla(var(--first-hue), var(--sat), var(--lig), 1),
@@ -297,12 +280,12 @@ body.light-theme {
   color: var(--text-color);
 }
 
-/* Change background header */
+
 .scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
 
-/*=============== HOME ===============*/
+
 .home_container {
   position: relative;
   row-gap: 4.5rem;
@@ -413,7 +396,7 @@ body.light-theme {
   transform: rotate(-90deg);
 }
 
-/*=============== BUTTONS ===============*/
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -435,7 +418,7 @@ body.light-theme {
   color: var(--first-color);
 }
 
-/*=============== ABOUT ===============*/
+
 .about_container {
   row-gap: 2.5rem;
 }
@@ -481,7 +464,7 @@ body.light-theme {
   margin-bottom: 2rem;
 }
 
-/*=============== SKILLS ===============*/
+
 .skills_container {
   row-gap: 2rem;
   padding-top: 1rem;
@@ -534,7 +517,7 @@ body.light-theme {
 
 }
 
-/*=============== SERVICES ===============*/
+
 .services_container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -570,7 +553,6 @@ body.light-theme {
   transition: .4s;
 }
 
-/* Services modal */
 .services_modal {
   position: fixed;
   inset: 0;
@@ -633,13 +615,11 @@ body.light-theme {
   cursor: pointer;
 }
 
-/*Active modal*/
 .active-modal {
   opacity: 1;
   visibility: visible;
 }
 
-/*=============== WORK ===============*/
 .work_container {
   padding-top: 1rem;
 }
@@ -702,7 +682,6 @@ body.light-theme {
   color: var(--body-color);
 }
 
-/*=============== TESTIMONIAL ===============*/
 .testimonial_card {
   background-color: var(--container-color);
   padding: 1.25rem 1.5rem;
@@ -735,7 +714,6 @@ body.light-theme {
   background-color: var(--first-color);
 }
 
-/*=============== CONTACT ===============*/
 .contact_container {
   row-gap: 3rem;
   padding-bottom: 3rem;
@@ -833,8 +811,6 @@ body.light-theme {
 .contact_form-area textarea {
   resize: none;
 }
-
-/*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
 }
@@ -886,7 +862,6 @@ footer_link {
   font-size: var(--smaller-font-size);
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
   border-radius: .5rem;
@@ -902,8 +877,7 @@ footer_link {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 @media screen and (max-width: 32px) {
   .nav_menu {
     padding: 1rem 1.5rem;
@@ -948,7 +922,7 @@ footer_link {
   }
 }
 
-/* For medium devices */
+
 @media screen and (min-width:576px) {
   .nav_menu {
     width: 328px;
@@ -1013,7 +987,7 @@ footer_link {
   }
 }
 
-/* For large devices */
+
 @media screen and (min-width: 992px){
   .container{
     margin-left: auto;
