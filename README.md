@@ -2,7 +2,7 @@
 
 This repository contains the code for my personal portfolio website, showcasing my skills and projects as a web developer. 
 
-🚀 **Live Demo:** [Insert your website URL here] 🚀
+🚀 **Live Demo:** ] 🚀
 
 ## 📖 About the Project
 
@@ -13,11 +13,6 @@ This website is built with:
 * **JavaScript:** ✨ For interactive elements and functionality.
 
 ## 📸 Screenshots 
-(Optional: Include a few screenshots of your website)
-
-[Image of Homepage]
-[Image of About Me section]
-[Image of Projects section]
 
 ## 🛠️ Installation and Setup
 
